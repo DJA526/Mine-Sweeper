@@ -47,6 +47,14 @@ public class MineSweeper {
     void initializeMines(int firstCellCol, int firstCellRow) {
         // TODO fill in
         // Hint, use `Optional.of(...)` to create a non-empty `Optional`.
+    		boolean[][] tempMines = new boolean[HEIGHT][WIDTH];
+    		for (int i = 0; i < HEIGHT; i++) {
+    			for (int j = 0; j < WIDTH; j++) {
+				
+			}
+		}
+    		mines = Optional.of(tempMines);
+    		numCellsToOpen = (WIDTH*HEIGHT) - NUM_MINES;
     }
     
     /**
@@ -71,6 +79,7 @@ public class MineSweeper {
      */
     void resetGame(Object unused) {
         // TODO fill in
+    		mines = Optional.empty();
     }
     
     private void createAndShowFrame() {
